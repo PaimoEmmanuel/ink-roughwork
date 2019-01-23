@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-  <div>
+  <!--<div>
     <ul>
       <li><a href="#home">Logo**</a></li>
       <li><a href="#latest">Latest</a></li>
@@ -14,50 +17,81 @@
       <li style="float:right"><a href="#signup">Sign up</a></li>
       <li style="float:right"><a href="#about">About</a></li>
     </ul>
-  </div>
-  <header>
+  </div>-->
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#"><img alt="Logo" src=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">Home</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   <div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="images/readers.jpeg">
+  <div class="mySlidess fadee">
+    <img class="swipe" src="images/readers.jpeg">
     <div class="text">
         <p class="p1">A WHOLE DIFFERENT UNIVERSE</p>
         <p class="p2">A creative world for writers and readers alike.</p>
+        <a href="#" class="btn btn-info btn-lg" role="button">Get started</a>
+        <div>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span></div>
     </div>
   </div>
   
-  <div class="mySlides fade">
-    <img src="images/woman-typing-writing-windows.jpg">
+  <div class="mySlidess fadee">
+    <img class="swipe" src="images/woman-typing-writing-windows.jpg">
     <div class="text">
         <p class="p1">AN AMAZING SOCIAL PLATFORM</p>
         <p class="p2">Follow your favourite writers.</p>
+        <a href="#" class="btn btn-info btn-lg" role="button">Get started</a>
+        <div>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span></div>
     </div>
   </div>
   
-  <div class="mySlides fade">
-    <img src="images/collaboration.jpeg">
+  <div class="mySlidess fadee">
+    <img class="swipe" src="images/collaboration.jpeg">
     <div class="text">
       <p class="p1">A FAST GROWING COMMUNITY</p>
       <p class="p2">Connect with fellow writers<br>Share ideas!</p>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <a href="#" class="btn btn-info btn-lg" role="button">Get started</a>
+        <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span></div>
     </div>
   </div>
   
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
+  <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next-one" onclick="plusSlides(1)">&#10095;</a>
+
   <div style="text-align:center"> 
   </div>
   </div>
-</div>
-</header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
